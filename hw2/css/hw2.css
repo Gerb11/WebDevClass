@@ -1,0 +1,81 @@
+body {
+	padding:0;
+	margin:0;
+	font-size: 12px;
+	font-family: arial, sans-serif;  
+	color:#000;
+	cursor:auto;
+}
+
+#mainbody {
+	display:block;
+	position: relative;
+	margin-left: 200px;
+	height: 580px;
+	width: 1000px;
+}
+
+#mainbody h3{
+	font-size:24px;
+	color: blue;
+}
+#numbers li, #chosen li {
+	list-style-type: none;
+	height: 20px;
+	width: 20px;
+	padding: 15px 25px 15px 25px;
+	text-align: center;
+	font-size: 20px;
+	margin: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: gray;
+	display:inline-block;
+	color: red;
+}
+#numbers li:hover, #chosen li:hover {
+	cursor: move;
+}
+#leftColumn {
+	display:inline-block;
+	width: 620px;
+	float: left;
+}
+#rightColumn {
+	display:inline-block;
+	float: right;
+	height: 350px;
+}
+#chosen {
+	width: 330px;
+	height: 220px;
+	background-color: #DEDEDE;
+	margin-bottom: 50px;
+}
+#chosen span {
+	padding: 5px;
+	margin: 5px;
+	background-color: #9F9F9F;
+	font-size: 20px;
+	float: left;
+	display:block;
+	width: 310px;
+	font-weight: bold;
+}
+#chosen ul {
+	height: 190px;
+}
+#date {
+	font-size: 15px;
+	color: blue;
+	margin-left: 100px;
+}
+#loader {
+	position: absolute;
+	right: 65px;
+    top: 330px;
+	z-index: 1;
+}
+.hiddenEle {
+	visibility: hidden;
+}
